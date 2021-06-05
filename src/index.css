@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-xl font-antonio ;
+    }
+    h2 {
+        @apply text-lg font-antonio tracking-tight;
+    }
+    h3 {
+        @apply text-sm font-spartan tracking-tighter;
+    }
+    h4 {
+        @apply text-xs font-spartan tracking-wide;
+    }
+}
