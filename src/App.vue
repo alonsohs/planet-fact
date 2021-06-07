@@ -1,7 +1,7 @@
 <template>
   <div class="w-full min-h-screen bg-background bg-star-pattern text-white" >
     <Header/>
-    <PlanetPage :data="planetsData[]"/>
+    <PlanetPage :data="planetsData[2]"/>
   </div>
 </template>
 
