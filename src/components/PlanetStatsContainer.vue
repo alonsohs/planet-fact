@@ -1,9 +1,9 @@
 <template>
   <div class="px-7 py-10  flex flex-col gap-3">
-    <PlanetStat property="Rotation" value="34343"/>
-    <PlanetStat property="Rotation" value="34343"/>
-    <PlanetStat property="Rotation" value="34343"/>
-    <PlanetStat property="Rotation" value="34343"/>
+    <PlanetStat property="Rotation time" :value="rotation"/>
+    <PlanetStat property="revolution time" :value="revolution"/>
+    <PlanetStat property="radius" :value="radius"/>
+    <PlanetStat property="average temp" :value="temperature"/>
   </div>
 </template>
 
@@ -14,6 +14,12 @@ export default {
 name: "PlanetStatsContainer",
   components: {
     PlanetStat
+  },
+  props: {
+    rotation: String,
+    revolution: String,
+    radius: String,
+    temperature: String
   }
 }
 </script>

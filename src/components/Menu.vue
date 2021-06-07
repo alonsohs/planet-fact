@@ -2,7 +2,7 @@
   <button class="md:hidden" @click="toggleMenu">
     <img src="../assets/icon-hamburger.svg" alt="icon menu" :class="{'opacity-50': isMenuOpen}">
   </button>
-  <nav v-show="isMenuOpen" class="absolute top-full left-0 w-full md:hidden p-7 bg-background mt-[20px]">
+  <nav v-show="isMenuOpen" class="absolute top-full left-0 w-full md:hidden p-7 bg-background mt-[20px] z-10">
     <ul class="divide-y divide-spaceGray">
       <MenuItem section-name="mercury" color="spaceLightBlue"/>
       <MenuItem section-name="venus" color="spaceYellow"/>

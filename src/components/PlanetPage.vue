@@ -3,7 +3,7 @@
     <SectionsMenu :color="data.color" @changeSelected="handleChangeSelected" :selected="selected"/>
     <PlanetImage :images="data.images" :selected="selected"/>
     <PlanetDescription :name="data.name" :overview="data.overview" :structure="data.structure" :geology="data.geology" :selected="selected"/>
-    <PlanetStatsContainer/>
+    <PlanetStatsContainer :rotation="data.rotation" :revolution="data.revolution" :radius="data.radius" :temperature="data.temperature"/>
   </main>
 </template>
 
