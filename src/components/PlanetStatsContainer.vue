@@ -1,5 +1,5 @@
 <template>
-  <div class="px-7 py-10  flex flex-col gap-3">
+  <div class="px-7 py-10  flex flex-col gap-3 md:order-4 md:flex-row md:flex-grow">
     <PlanetStat property="Rotation time" :value="rotation"/>
     <PlanetStat property="revolution time" :value="revolution"/>
     <PlanetStat property="radius" :value="radius"/>

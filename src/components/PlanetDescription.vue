@@ -1,12 +1,12 @@
 <template>
-  <div class="px-7 text-center" >
+  <div class="px-7 text-center md:order-2 md:w-1/2 md:pr-0 md:text-left" >
     <h1 class="mb-6">{{name}}</h1>
 
-    <p v-if="selected === 1" >{{overview.content}}</p>
-    <p v-else-if="selected === 2" >{{structure.content}}</p>
-    <p v-else >{{geology.content}}</p>
+    <p v-if="selected === 1" class="description">{{overview.content}}</p>
+    <p v-else-if="selected === 2" class="description">{{structure.content}}</p>
+    <p v-else class="description">{{geology.content}}</p>
 
-    <p class="description mt-4">
+    <p class="mt-4">
       <span class=" text-spaceGray">Source : </span>
       <a v-if="selected === 1" :href="overview.source" class="link">Wikipedia</a>
       <a v-else-if="selected === 2" :href="structure.source" class="link">Wikipedia </a>
@@ -32,6 +32,10 @@ export default {
 
   .link {
     @apply underline font-bold text-spaceGray;
+  }
+
+  .description {
+    @apply md:leading-7
   }
 
 </style>

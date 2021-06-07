@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="md:flex md:flex-wrap w-screen">
     <SectionsMenu :color="data.color" @changeSelected="handleChangeSelected" :selected="selected"/>
     <PlanetImage :images="data.images" :selected="selected"/>
     <PlanetDescription :name="data.name" :overview="data.overview" :structure="data.structure" :geology="data.geology" :selected="selected"/>
